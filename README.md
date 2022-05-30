@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-** Demo:** https://wolfgangnelli.github.io/Game-Of-Life/
+**Demo:** https://wolfgangnelli.github.io/Game-Of-Life/
 
 ## Available Scripts
 
