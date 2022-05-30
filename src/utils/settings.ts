@@ -13,3 +13,9 @@ export const operations = [
 ];
 
 export const homePageTitle = "CONWAY'S GAME OF LIFE"
+
+export const items = [
+  'Generate a random initial configuration',
+  'Start the game',
+  'When you want you can stop the game and / or clean the grill'
+]
