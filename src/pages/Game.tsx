@@ -2,9 +2,10 @@ import React, {useState, useCallback, useRef} from 'react';
 import { Link } from 'react-router-dom'
 import { Square, Button } from '../components/atoms/index'
 import { Page } from '../components/organisms/index'
+import { InstructionList } from '../components/molecules/index'
 import { createEmptyGrid } from '../utils/index'
 import { createRandomItems } from '../utils/index'
-import { rows, cols, operations } from '../utils/settings'
+import { rows, cols, operations, items } from '../utils/settings'
 import produce from 'immer';
 
 const Game = () => {
@@ -59,7 +60,7 @@ const Game = () => {
 
   return (
     <Page>
-      <h1 className='text-blue-600 font-bold py-5 text-4xl'>
+      <h1 className='text-blue-600 font-bold pt-5 pb-10 text-4xl'>
         <Link to='/'>
         GAME OF LIFE
         </Link>
@@ -78,6 +79,10 @@ const Game = () => {
             }} start={start} />
             <Button label='clear' onClick={() => setGrid(createEmptyGrid(rows, cols))} />
             <Button label='random' onClick={() => createRandomItems(setGrid, rows, cols)} />
+            <div className='text-white'>
+              <p className='text-left font-semibold py-2 text-blue-400'>How to play:</p>
+               <InstructionList items={items} />
+            </div>
         </div>
       </div>
     </Page>
