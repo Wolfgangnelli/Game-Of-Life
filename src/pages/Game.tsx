@@ -1,6 +1,5 @@
 import React, {useState, useCallback, useRef} from 'react';
-import { Link } from 'react-router-dom'
-import { Square, Button } from '../components/atoms/index'
+import { Square, Button, Title } from '../components/atoms/index'
 import { Page } from '../components/organisms/index'
 import { InstructionList } from '../components/molecules/index'
 import { createEmptyGrid } from '../utils/index'
@@ -60,11 +59,7 @@ const Game = () => {
 
   return (
     <Page>
-      <h1 className='text-blue-600 font-bold pt-5 pb-10 text-4xl'>
-        <Link to='/'>
-        GAME OF LIFE
-        </Link>
-      </h1>
+      <Title label='GAME OF LIFE' path='/' />
       <div className="flex flex-wrap mx-5">
         <div className='grid md:w-3/4' style={{ gridTemplateColumns: `repeat(${cols}, 20px)` }}>
           {grid.map((rows, i) => rows.map((col, idx) => <Square key={`${i}-${idx}`} setGrid={setGrid} grid={grid} i1={i} i2={idx} />))}
