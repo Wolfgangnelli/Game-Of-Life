@@ -5,7 +5,7 @@ import { Button } from '../components/atoms/index'
 
 const Homepage = () => {
   return (
-    <div className='py-10'>
+    <div className='py-10 h-screen'>
       <h1 className='mb-6 font-bold text-5xl text-white'>{homePageTitle}</h1>
       <img src={frontImage} alt="conway's game of life" className='mx-auto mb-5' />
       <div className='mb-6 text-white'>
