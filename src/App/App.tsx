@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import Routes from '../routes/index'
+import { Footer } from '../components/organisms'
 import './index.css';
 
 const App: FC = () => {
 
   return (
-    <div className="app min-h-screen">
+    <div className="app relative">
         <Routes />
     </div>
   );
