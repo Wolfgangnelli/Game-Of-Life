@@ -8,9 +8,9 @@ import { rows, cols, operations, items } from '../utils/settings'
 import produce from 'immer';
 
 const Game = () => {
-  const [start, setStart] = useState(false)
+  const [start, setStart] = useState<boolean>(false)
 
-  const [grid, setGrid] = useState(() => {
+  const [grid, setGrid] = useState<number[][]>(() => {
     return createEmptyGrid(rows, cols)
   })
 
