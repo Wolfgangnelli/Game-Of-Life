@@ -10,14 +10,15 @@
     --link-color: #61dafb;
 }
 
+html, body {
+    height: 100% !important;
+    margin: 0;
+  }
+
 .app {
     text-align: center;
     background-color: var(--bg-color);
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
+    height: 100%;
+    min-height: 900px;
   }
-
-  
